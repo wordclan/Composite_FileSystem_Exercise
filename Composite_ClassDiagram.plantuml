@@ -1,0 +1,45 @@
+@startuml
+
+title __Composite Class Diagram__\n
+
+    class Directory {
+        - name : String
+        - nodes : List<Node>
+        + Directory() <<create>>
+        + addNode()
+        + getNodes()
+        + getSize()
+        + getName()
+        + setName()
+        + numberOfFiles()
+  }
+  
+
+    class File {
+        - name : String
+        - size : long
+        + File() <<create>>
+        + equals()
+        + hashCode()
+        + getName()
+        + getSize()
+        + setName()
+        + setSize()
+        + numberOfFiles()
+        + toString()
+    }
+  
+
+    abstract class Node {
+        + addNode()
+        + getNodes()
+        {abstract} + getName()
+        {abstract} + getSize()
+        {abstract} + numberOfFiles()
+    }
+  
+
+  Directory -up-|> Node
+  File -up-|> Node
+
+@enduml

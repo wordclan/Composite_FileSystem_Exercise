@@ -1,0 +1,51 @@
+@startuml
+
+title __createFileSystem() Object-Diagram__\n
+
+    object "root:Directory" as root {
+       - name = "/"
+       - nodes = home
+    }
+
+    object "home:Directory" as home {
+       - name = "home"
+       - nodes = trappa, tomcat
+    }
+
+
+    object "trappa:Directory" as trappa {
+       - name = "toni"
+       - nodes = :File, :File
+    }
+
+    object "tomcat:Directory" as tomcat {
+       - name = "tomcat"
+       - nodes = :File
+    }
+
+   object ":File" as bashrc_1024 {
+      - name = ".bashrc"
+      - size = 1024
+   }
+
+   object ":File" as todo_txt {
+      - name = "todo.txt"
+      - size = 2048
+   }
+
+
+   object ":File" as bashrc_512 {
+      - name = ".bashrc"
+      - size = 512
+   }
+
+
+
+    root -- home
+    home -- trappa
+    home -- tomcat
+    trappa -- bashrc_1024
+    trappa -- todo_txt
+    tomcat -- bashrc_512
+
+@enduml

@@ -1,0 +1,24 @@
+TODO: Composite Pattern Exercise
+originally by Prof. Teiniker
+***********
+* DEUTSCH *
+***********
+
+1. Bitte korrigieren Sie alle eventuellen Fehler im Code, sodass die Klassen
+   dem Klassendiagramm entsprechen und das Projekt fehlerlos kompiliert.
+2. Bauen Sie die Directory/File-Struktur auf die Sie im Objektdiagramm sehen.
+   Das müssen Sie in der 'setup()'-Methode der DirectoryTest-Klasse machen.
+
+Viel Spaß!
+
+***********
+* ENGLISH *
+***********
+
+1. Please fix the errors in the code to match the class diagram
+   and that it compiles
+2. Build up the directory/file structure to pass the tests
+   This is done in the 'setup()' method of the directory test.
+
+Have fun!
+
